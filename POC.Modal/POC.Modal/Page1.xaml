@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:l="clr-namespace:POC.Modal;assembly=POC.Modal"
+             x:Class="POC.Modal.Page1">
+  <l:ButtonOpenDialog Text="Open modal" TitleModal="{Binding TitleModal}">
+    <l:ButtonOpenDialog.ContentModal>
+      <!--TODO : Binding not work here, ... -->
+      <!--<Label Text="{Binding ContentModal}" />-->
+      <Label Text="XAML test" />
+    </l:ButtonOpenDialog.ContentModal>
+  </l:ButtonOpenDialog>
+</ContentPage>
